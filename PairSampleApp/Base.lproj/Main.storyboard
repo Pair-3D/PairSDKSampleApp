@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Model Delegate-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mwM-Lq-3OA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pry-gd-b2A" customClass="PairView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="modelDelegate" destination="BYZ-38-t0r" id="RpW-TS-Wca"/>
+                                    <outlet property="recordingDelegate" destination="BYZ-38-t0r" id="5Si-Fz-rkt"/>
+                                    <outlet property="sensorFusionDelegate" destination="BYZ-38-t0r" id="b46-HS-E8F"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYU-gg-RnT">
+                                <rect key="frame" x="20" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7eE-wG-ju8"/>
+                                    <constraint firstAttribute="width" constant="40" id="sbZ-id-wwq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="[o]">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onImageButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfj-yJ-6i0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wn-Zh-Sw5">
+                                <rect key="frame" x="289" y="30" width="76" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Swap Swatch">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onImageButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ymV-rV-6ms"/>
+                                    <action selector="onSwapSwatchTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HV3-qd-tkx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu7-Tg-Dj0">
+                                <rect key="frame" x="167" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="HN6-bs-Rhy"/>
+                                    <constraint firstAttribute="height" constant="40" id="PXD-Gf-Oc0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAddButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0zr-Tc-D8m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhn-vH-8Xw">
+                                <rect key="frame" x="315" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hUx-uy-rcr"/>
+                                    <constraint firstAttribute="height" constant="40" id="yjY-6B-ygg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="[]&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onImageButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLs-er-f2o"/>
+                                    <action selector="onVideoButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Idm-7i-Okm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pry-gd-b2A" firstAttribute="top" secondItem="mwM-Lq-3OA" secondAttribute="top" id="170-Os-jUv"/>
+                            <constraint firstItem="TYU-gg-RnT" firstAttribute="centerY" secondItem="vu7-Tg-Dj0" secondAttribute="centerY" id="4xO-9P-yDa"/>
+                            <constraint firstAttribute="trailing" secondItem="pry-gd-b2A" secondAttribute="trailing" id="5bz-gm-wlB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pry-gd-b2A" secondAttribute="bottom" id="7j7-28-Qqq"/>
+                            <constraint firstItem="5wn-Zh-Sw5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="D0g-wg-K2p"/>
+                            <constraint firstAttribute="trailing" secondItem="Nhn-vH-8Xw" secondAttribute="trailing" constant="20" id="Nyd-DF-UvZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vu7-Tg-Dj0" secondAttribute="bottom" constant="20" id="OOA-KW-ixv"/>
+                            <constraint firstItem="pry-gd-b2A" firstAttribute="leading" secondItem="mwM-Lq-3OA" secondAttribute="leading" id="WpQ-x6-p3S"/>
+                            <constraint firstItem="TYU-gg-RnT" firstAttribute="leading" secondItem="mwM-Lq-3OA" secondAttribute="leading" constant="20" id="YKN-in-hil"/>
+                            <constraint firstItem="vu7-Tg-Dj0" firstAttribute="centerY" secondItem="Nhn-vH-8Xw" secondAttribute="centerY" id="ZsH-U5-ild"/>
+                            <constraint firstAttribute="trailing" secondItem="5wn-Zh-Sw5" secondAttribute="trailing" constant="10" id="d3g-Dw-8Jf"/>
+                            <constraint firstItem="vu7-Tg-Dj0" firstAttribute="centerX" secondItem="mwM-Lq-3OA" secondAttribute="centerX" id="wqW-ap-grC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="vu7-Tg-Dj0" id="DnL-hz-Ldt"/>
+                        <outlet property="imageButton" destination="TYU-gg-RnT" id="zsb-PP-gXQ"/>
+                        <outlet property="pairView" destination="pry-gd-b2A" id="OW7-7E-9Jb"/>
+                        <outlet property="swatchButton" destination="5wn-Zh-Sw5" id="yqv-Cc-NJs"/>
+                        <outlet property="videoButton" destination="Nhn-vH-8Xw" id="82A-Px-xLi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
