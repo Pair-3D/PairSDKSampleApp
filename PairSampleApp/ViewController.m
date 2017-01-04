@@ -164,9 +164,11 @@
     if (self.pairView.isRecordingVideo) {
         [self.pairView stopVideoRecording];
         [self.videoButton setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
+        [self.videoButton setTitle:@"Record Video" forState:UIControlStateNormal];
     } else {
         [self.pairView startVideoRecording];
         [self.videoButton setTitleColor:UIColor.redColor forState:UIControlStateNormal];
+        [self.videoButton setTitle:@"Stop Video" forState:UIControlStateNormal];
     }
 }
 
