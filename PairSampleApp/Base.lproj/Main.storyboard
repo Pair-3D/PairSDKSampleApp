@@ -54,7 +54,6 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onImageButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ymV-rV-6ms"/>
                                     <action selector="onSwapSwatchTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HV3-qd-tkx"/>
                                 </connections>
                             </button>
@@ -87,7 +86,6 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onImageButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLs-er-f2o"/>
                                     <action selector="onVideoButtonTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Idm-7i-Okm"/>
                                 </connections>
                             </button>
