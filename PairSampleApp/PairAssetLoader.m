@@ -110,7 +110,7 @@ typedef void (^DownloadErrorBlock)(NSError * _Nullable error);
 - (float)percentLoaded
 {
     if (self.task.countOfBytesExpectedToReceive > 0 ) {
-        return self.task.countOfBytesReceived / self.task.countOfBytesExpectedToReceive;
+        return self.task.countOfBytesReceived / (float)self.task.countOfBytesExpectedToReceive;
     } else {
         return 0;
     }
