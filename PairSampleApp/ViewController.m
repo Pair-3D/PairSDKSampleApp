@@ -110,7 +110,7 @@
     NSURL *modelURL = [PairAssetLoader findModelFileInDirectory:saveLocation];
     if (modelURL) {
         // The model data is on the device. Load directly from file.
-        pairAsset = [[PairAsset alloc] initWithURL:modelURL];
+        pairAsset = [[PairAsset alloc] initWithURL:modelURL andUnitsPerMeter:0.01];
     } else {
         // The model data is not on the device and so needs to be downloaded.
 
@@ -149,7 +149,7 @@
                                                                     andPlaceholderBoundingBox:boundingBox];
 
         // Create a new PairAsset using a PairAssetLoader (an implementation of the PairAssetLoaderProtocol).
-        pairAsset = [[PairAsset alloc] initWithPairAssetLoader:pairAssetLoader];
+        pairAsset = [[PairAsset alloc] initWithPairAssetLoader:pairAssetLoader andUnitsPerMeter:0.01];
     }
 
     // Add PairAsset to the PairView.

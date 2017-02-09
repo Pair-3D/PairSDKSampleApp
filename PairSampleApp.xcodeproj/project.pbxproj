@@ -13,8 +13,6 @@
 		343B2C6A1DDA5D65000749F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343B2C681DDA5D65000749F3 /* Main.storyboard */; };
 		343B2C6C1DDA5D65000749F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343B2C6B1DDA5D65000749F3 /* Assets.xcassets */; };
 		343B2C6F1DDA5D65000749F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 343B2C6D1DDA5D65000749F3 /* LaunchScreen.storyboard */; };
-		34418B621E1AD25200925BC7 /* pair_black_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 34418B481E1AD25200925BC7 /* pair_black_dot.png */; };
-		34418B631E1AD25200925BC7 /* pair_close_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 34418B491E1AD25200925BC7 /* pair_close_button.png */; };
 		34418B651E1AD2A000925BC7 /* libPairSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34418B641E1AD2A000925BC7 /* libPairSDK.a */; };
 		34601FBE1DDBAA6D00BB6F69 /* PairAssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 34601FBB1DDBAA6D00BB6F69 /* PairAssetLoader.m */; };
 		34601FC41DDBF89900BB6F69 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34601FC31DDBF89900BB6F69 /* libz.tbd */; };
@@ -33,8 +31,6 @@
 		343B2C6B1DDA5D65000749F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343B2C6E1DDA5D65000749F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		343B2C701DDA5D65000749F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34418B481E1AD25200925BC7 /* pair_black_dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pair_black_dot.png; sourceTree = "<group>"; };
-		34418B491E1AD25200925BC7 /* pair_close_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pair_close_button.png; sourceTree = "<group>"; };
 		34418B4B1E1AD25200925BC7 /* Pair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pair.h; sourceTree = "<group>"; };
 		34418B4C1E1AD25200925BC7 /* PairAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairAsset.h; sourceTree = "<group>"; };
 		34418B4D1E1AD25200925BC7 /* PairAssetLoaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairAssetLoaderProtocol.h; sourceTree = "<group>"; };
@@ -124,16 +120,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		34418B471E1AD25200925BC7 /* PairSDKAssets */ = {
-			isa = PBXGroup;
-			children = (
-				34418B481E1AD25200925BC7 /* pair_black_dot.png */,
-				34418B491E1AD25200925BC7 /* pair_close_button.png */,
-			);
-			name = PairSDKAssets;
-			path = PairSDK/PairSDKAssets;
-			sourceTree = "<group>";
-		};
 		34418B4A1E1AD25200925BC7 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +154,6 @@
 		34418B671E1AD41000925BC7 /* PairSDK */ = {
 			isa = PBXGroup;
 			children = (
-				34418B471E1AD25200925BC7 /* PairSDKAssets */,
 				34418B4A1E1AD25200925BC7 /* include */,
 			);
 			name = PairSDK;
@@ -274,8 +259,6 @@
 				343B2C6F1DDA5D65000749F3 /* LaunchScreen.storyboard in Resources */,
 				343B2C6C1DDA5D65000749F3 /* Assets.xcassets in Resources */,
 				343B2C6A1DDA5D65000749F3 /* Main.storyboard in Resources */,
-				34418B621E1AD25200925BC7 /* pair_black_dot.png in Resources */,
-				34418B631E1AD25200925BC7 /* pair_close_button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

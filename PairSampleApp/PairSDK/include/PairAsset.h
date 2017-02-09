@@ -42,11 +42,24 @@
 @property (nonatomic, readonly, nonnull) NSArray<UIImage *> *swatchThumbnailImages;
 
 /*!
+ @brief The scalar used to convert the model unit dimensions to meters. Default value is 1 unit per meter.
+ */
+@property (nonatomic, readonly) float unitsPerMeter;
+
+/*!
  @brief Initializes a PairAsset from a local file at the specified URL.
- @param url A URL specifying the location a PairAsset file. Must be on the device's local filesystem.
+ @param modelURL A URL specifying the location of the PairAsset file. Must be on the device's local filesystem.
  @return A new PairAsset object.
  */
-- (nullable instancetype)initWithURL:(nonnull NSURL *)url;
+- (nullable instancetype)initWithURL:(nonnull NSURL *)modelURL;
+
+/*!
+ @brief Initializes a PairAsset from a local file at the specified URL.
+ @param modelURL A URL specifying the location of the PairAsset file. Must be on the device's local filesystem.
+ @param unitsPerMeter Apply a scalar used to convert the model unit dimensions to meters.
+ @return A new PairAsset object.
+ */
+- (nullable instancetype)initWithURL:(nonnull NSURL *)modelURL andUnitsPerMeter:(float)unitsPerMeter;
 
 /*!
  @brief Initializes a PairAsset using the specified PairAssetLoader.
@@ -55,6 +68,15 @@
  @return A new PairAsset object.
  */
 - (nullable instancetype)initWithPairAssetLoader:(nonnull id<PairAssetLoaderProtocol>)pairAssetLoader;
+
+/*!
+ @brief Initializes a PairAsset using the specified PairAssetLoader and units per meter.
+ @discussion While the asset is loading a placeholder wireframe bounding box will be displayed in it's place.
+ @param pairAssetLoader A loader object, conforming to the PairAssetLoaderProtocol, that will be used to asyncronously load the PairAsset model.
+ @param unitsPerMeter Apply a scalar used to convert the model unit dimensions to meters.
+ @return A new PairAsset object.
+ */
+- (nullable instancetype)initWithPairAssetLoader:(nonnull id<PairAssetLoaderProtocol>)pairAssetLoader andUnitsPerMeter:(float)unitsPerMeter;
 
 @property (nonatomic, readonly, nullable) NSString *meshName __deprecated; // TODO: Not sure if this should be exposed in the API.
 @property (nonatomic, readonly) NSTimeInterval totalTimeViewed __deprecated; // TODO: Not sure if this should be exposed in the API.

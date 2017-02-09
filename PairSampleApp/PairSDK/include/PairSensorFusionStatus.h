@@ -27,9 +27,14 @@
 @property (nonatomic, readonly) PairSensorFusionRunState runState;
 
 /*!
- Convienance in accessing the PairSensorFusionRunState.
+ Convienance in accessing the PairSensorFusionRunState. True if run state is PairSensorFusionRunStateSteadyInitialization.
  */
 @property (nonatomic, readonly) BOOL isInitializing;
+
+/*!
+ Convienance in accessing the PairSensorFusionRunState. True if run state is PairSensorFusionRunStateRunning.
+ */
+@property (nonatomic, readonly) BOOL isRunning;
 
 /*! Indicates the progress in the current runState.
 
